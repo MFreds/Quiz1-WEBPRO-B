@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hometown's Local Food</title>
+    <link rel="stylesheet" type="text/css" href="/quiz1/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Sirveill WEB</h1>
+        <p>An attemp to create a static web by a beginner</p>
+    </div>
+    <div class="navbar">
+        <a href="/quiz1/index.html">Home</a>
+    </div>
+    <!--Slide Show-->
+    <section>
+        <img class="mySlides" src="/quiz1/gambar/food1.jpg" border="5">
+        <img class="mySlides" src="/quiz1/gambar/food2.jpg" border="5">
+        <img class="mySlides" src="/quiz1/gambar/food3.jpg" border="5">
+        <p style="text-align: center;">My Hometown Local Food</p>
+    </section>
+    <section style="text-align: center;border:5px solid black">
+        <h2>1. Kue Rangi</h2>
+        <p>
+            Rangi cake is a cake made from grated coconut and starch, then printed in a 
+            special mold (like a cake mold but the holes are shallower).<br>
+            The cake then grilled, and lastly covered in brown sugar sauce that is soft 
+            in the mouth.<br>
+        </p>
+        <h2>2. Sayur Gabus Pucung</h2>
+        <p>
+            The main ingredient of the Pucung Gabus vegetable is fried snakehead fish, 
+            which is mixed with special spices which contains kluwek.<br>
+            The presence of kluwek is what makes the Pucung Gabus Vegetable sauce black 
+            like rawon.<br>
+            The taste of Sayur Gabus Pucung is quite tasty, 
+            and can make anyone who eats it addicted.<br>
+        </p>
+        <h2>3. Bir Pletok</h2>
+        <p>
+            Pletok beer is a drink made from ginger, cinnamon, cardamom, cloves, 
+            and various other spices.<br>
+            Despite its "beer" name, this drink does not contain alcohol at all.<br>
+            In fact Pletok Beer is very good for the health of the body, and has the power 
+            to treat diseases.<br>
+            The word "beer" itself, is taken from Arabic which means a well or 
+            a water source.<br>
+        </p>
+    </section>
+    <footer>
+        Created by Fredi
+    </footer>
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+        </script>
+</body>
+</html>

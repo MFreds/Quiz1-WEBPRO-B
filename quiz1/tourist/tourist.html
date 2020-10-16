@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hometown Tourist Spot</title>
+    <link rel="stylesheet" type="text/css" href="/quiz1/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Sirveill WEB</h1>
+        <p>An attemp to create a static web by a beginner</p>
+    </div>
+    <div class="navbar">
+        <a href="/quiz1/index.html">Home</a>
+    </div>
+    <!--Slide Show-->
+    <section>
+        <img class="mySlides" src="/quiz1/gambar/tourist1.jpg" border="5">
+        <img class="mySlides" src="/quiz1/gambar/tourist2.jpg" border="5">
+        <img class="mySlides" src="/quiz1/gambar/tourist3.jpg" border="5">
+        <p style="text-align: center;">My Hometown Tourist Spot</p>
+    </section>
+    <section style="text-align: center;border:5px solid black">
+        <h2>1. Alun alun Kota Bekasi</h2>
+        <p>
+            The atmosphere in this park is beautiful and cool. 
+            Because around this park there are many shady trees.<br>
+            The facilities that are already available in this square park are 
+            free wifi, children's playgrounds, and jogging spots.<br>
+        </p>
+        <h2>2. Curug Parigi</h2>
+        <p>
+            This waterfall has a very beautiful and beautiful panorama.<br>
+            This waterfall has been used as a shooting location, one of the titles is 
+            "Sang Penakluk", played by Suzanna.<br>
+            In this place there are also great spots to make as your photo background.<br>
+        </p>
+        <h2>3. Pantai Mekar</h2>
+        <p>
+            Apart from the clear water, this beach also has beautiful views.<br>
+            If you are hungry, this place also sells food.<br>
+            In the area around this Mekar beach, some of the residents work as fishermen.<br> 
+            So you can rent a boat to get around this blooming beach.<br>
+        </p>
+    </section>
+    <footer>
+        Created by Fredi
+    </footer>
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+        </script>
+</body>
+</html>

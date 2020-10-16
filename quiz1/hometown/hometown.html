@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hometown</title>
+    <link rel="stylesheet" type="text/css" href="/quiz1/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Sirveill WEB</h1>
+        <p>An attemp to create a static web by a beginner</p>
+    </div>
+    <div class="navbar">
+        <a href="/quiz1/index.html">Home</a>
+    </div>
+
+    <section>
+        <!-- <img src="gambar/hometown.jpeg" class="center" > -->
+        <img class="mySlides" src="/quiz1/gambar/hometown.jpeg" border="5">
+        <img class="mySlides" src="/quiz1/gambar/hometown2.jpg" border="5">
+        <img class="mySlides" src="/quiz1/gambar/hometown3.jpg" border="5">
+        <p style="text-align: center;">My Hometown</p>
+    </section>
+    <section style="text-align: center;border:5px solid black">
+        <h2>About My Hometown</h2>
+        <p>My hometown is in Bekasi, West java.<br>
+            Located in the eastern border of Jakarta.<br>
+            It serves as a commuter city within the Jakarta metropolitan area, 
+            although it has notable trade, business and processing industries.<br>
+            Bekasi is one of the oldest cities in Indonesia, and has a history of 
+            being the capital city of the Kingdom of Tarumanagara.<br>
+            At that time, the name of Bekasi was Dayeuh Sundasembawa.<br>
+            As a dormitory city, many middle-up satellite areas have been developed in Bekasi,
+            complete with their own shopping malls, schools, hospitals, club houses, 
+            water park, and shuttle bus services to central Jakarta.<br>
+            Thats the brief info of bekasi, thanks for reading!!
+        </p>
+    </section>
+    <footer>
+        Created by Fredi
+    </footer>
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+        </script>
+</body>
+</html>
